@@ -1,0 +1,22 @@
+
+<!-- 	1. Create a simple nested function in which inner function is not accessible outside the outer function.
+		2. Just alert the values from the function. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function outerFunc(msg){
+			var innerFunc = function(){
+				alert("The message is: " + msg);
+			}
+			innerFunc();
+		}
+		
+		var alertMessage = outerFunc("Welome !!!");
+	</script>	
+</head>
+<body>
+Hi
+</body>
+</html>
